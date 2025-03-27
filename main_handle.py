@@ -42,7 +42,7 @@ try:
 except KeyError:
     print("Ro'yhatda bunday qiymat yo'q")
 except ValueError:
-    print("Faqat son kiriting!")
+    print("Faqat so'z kiriting!")
 
 """IndexError"""
 try:
