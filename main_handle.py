@@ -10,7 +10,8 @@ try:
     print(a / b)
 except ZeroDivisionError:
     print("b soni 0 bo'lib qolgan!, 0 ga bo'lish mumkin emas!")
-
+except ValueError:
+    print("Faqat son kiriting!")
 
 """ValueError"""
 try:
@@ -40,14 +41,18 @@ try:
     print(dct[text])
 except KeyError:
     print("Ro'yhatda bunday qiymat yo'q")
+except ValueError:
+    print("Faqat son kiriting!")
 
 """IndexError"""
 try:
     N = int(input())
     lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     print(lst[N])
-except:
+except IndexError:
     print("Siz kiritgan index toplamda mavjud emas!")
+except ValueError:
+    print("Faqat son kiriting!")
 
 """MemoryError"""
 try:
